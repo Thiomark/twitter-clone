@@ -6,7 +6,9 @@ const mutations = {
     FeedTwoots(state, payload){
         state.feedTwoots = payload
     }, 
-
+    addTwoot(state, payload){
+        state.feedTwoots.unshift(payload);
+    }, 
 }
 
 const actions = {
@@ -63,6 +65,9 @@ const actions = {
             }
         ]
         commit('FeedTwoots', twoots)
+    },
+    createTwoot({commit}, twoot){
+        commit('addTwoot', twoot)
     }
 }
 

@@ -26,6 +26,8 @@
 </template>
 
 <script>
+
+    import { mapActions } from 'vuex'
     export default {
         name: "CreateTwootComponent",
         data() {
@@ -34,15 +36,18 @@
             }
         },
         methods: {
+            ...mapActions('twoots',['createTwoot']),
             addTwoots(){
-                // const newTwoot = {
-                //         id: `'${new Date()}'`,
-                //         image: 'https://cdn.quasar.dev/img/avatar2.jpg', 
-                //         name: 'itumeleng', 
-                //         handle: 'thiomark', 
-                //         date: new Date(), 
-                //         twoot: this.text
-                //         }
+                
+                const newTwoot = {
+                        id: `'${new Date()}'`,
+                        image: 'https://cdn.quasar.dev/img/avatar2.jpg', 
+                        name: 'itumeleng', 
+                        handle: 'thiomark', 
+                        date: new Date(), 
+                        twoot: this.text
+                        }
+                this.createTwoot(newTwoot)
                 // this.twoots.unshift(newTwoot)
                 // this.text = ''
             }
