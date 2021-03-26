@@ -2,7 +2,7 @@
     <q-page>
         <CreateTwootComponent />
         <q-separator class="divider" size="10px" color="grey-2"/>
-        <q-list separator class="q-py-md q-px-lg">
+        <q-list separator class="q-py-md ">
             <transition-group
                 appear
                 enter-active-class="animated fadeIn slow"
