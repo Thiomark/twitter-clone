@@ -44,9 +44,12 @@
             </q-item>
             
             <div class="row q-mt-md the-icons justify-between q-pr-lg">
-                <q-btn label="Replies" size="sm" color="grey" flat icon="far fa-comment"/>
-                <q-btn label="Retwoot" size="sm" color="grey" flat icon="fas fa-retweet"/>
-                <q-btn label="Like" size="sm" :color="twoot.liked ? 'pink-6' : 'grey'" flat :icon="twoot.liked ? 'fas fa-heart' : 'far fa-heart'"/>
+                <q-btn class="gt-sm" label="Replies" size="sm" color="grey" flat icon="far fa-comment"/>
+                <q-btn class="gt-sm" label="Retwoot" size="sm" color="grey" flat icon="fas fa-retweet"/>
+                <q-btn class="gt-sm" label="Like" size="sm" :color="twoot.liked ? 'pink-6' : 'grey'" flat :icon="twoot.liked ? 'fas fa-heart' : 'far fa-heart'"/>
+                <q-btn class="lt-md" size="sm" color="grey" flat icon="far fa-comment"/>
+                <q-btn class="lt-md" size="sm" color="grey" flat icon="fas fa-retweet"/>
+                <q-btn class="lt-md" size="sm" :color="twoot.liked ? 'pink-6' : 'grey'" flat :icon="twoot.liked ? 'fas fa-heart' : 'far fa-heart'"/>
             </div>
         </q-item-section>
     </q-item>
